@@ -143,14 +143,14 @@ make -j$(nproc --all) \
   ARCH=arm64 \
   O=out \
   CC=clang \
-  LD=ld.lld \
-  LLVM=1 \
-  LLVM_IAS=1 \
   CROSS_COMPILE=aarch64-linux-gnu- \
   CROSS_COMPILE_ARM32=arm-linux-gnueabi- || {
         send_telegram_error
         exit 1
     }
+    # LD=ld.lld \
+    # LLVM=1 \
+    # LLVM_IAS=1 \
     BUILD_END=$(TZ=Asia/Jakarta date +%s)
     DIFF=$((BUILD_END - BUILD_START))
     BUILD_TIME="$((DIFF / 60)) min $((DIFF % 60)) sec"
