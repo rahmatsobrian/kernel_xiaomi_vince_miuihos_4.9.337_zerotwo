@@ -574,7 +574,7 @@ const struct arm64_cpu_capabilities arm64_errata[] = {
 	{
 		.capability = ARM64_HARDEN_BRANCH_PREDICTOR,
 		ERRATA_MIDR_RANGE_LIST(arm64_psci_bp_harden_cpus),
-		.cpu_enable = enable_psci_bp_hardening,
+		.cpu_enable = (void (*)(const struct arm64_cpu_capabilities *))enable_psci_bp_hardening,
 	},
 #endif
 	{
