@@ -45,7 +45,7 @@ jobs:
         # run: |
           # curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/next/kernel/setup.sh" | bash -s legacy
 
-      - name: Start Build with log)
+      - name: Start Build with log
         env:
           KBUILD_BUILD_USER: "RahmatSobrian"
           KBUILD_BUILD_HOST: "ReLIFE"
