@@ -7,7 +7,7 @@ yellow='\033[0;33m'
 white='\033[0m'
 
 # ================= PATH =================
-DEFCONFIG=vince-perf_defconfig
+DEFCONFIG=vince-miuihos_defconfig
 ROOTDIR=$(pwd)
 OUTDIR="$ROOTDIR/out/arch/arm64/boot"
 ANYKERNEL_DIR="$ROOTDIR/AnyKernel"
@@ -27,8 +27,8 @@ TIME_TITLE=$(TZ=Asia/Jakarta date +"%H%M%S")
 BUILD_DATETIME=$(TZ=Asia/Jakarta date +"%d %B %Y")
 
 # ================= TELEGRAM =================
-TG_BOT_TOKEN="7443002324:AAFpDcG3_9L0Jhy4v98RCBqu2pGfznBCiDM"
-TG_CHAT_ID="-1003520316735"
+TG_BOT_TOKEN="${TG_BOT_TOKEN}"
+TG_CHAT_ID="${TG_CHAT_ID}"
 
 # ================= GLOBAL =================
 BUILD_TIME="unknown"
